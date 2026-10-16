@@ -1,0 +1,54 @@
+<svg width="720" height="620" viewBox="0 0 720 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração temporária de uma pessoa desenvolvendo</title>
+  <desc id="desc">Pessoa estilizada trabalhando em um notebook, cercada por elementos gráficos em tons de rosa.</desc>
+  <defs>
+    <linearGradient id="halo" x1="140" y1="50" x2="610" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A62E58" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#221720" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="246" y1="376" x2="484" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3E2032"/>
+      <stop offset="1" stop-color="#221720"/>
+    </linearGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <circle cx="384" cy="296" r="216" fill="url(#halo)" filter="url(#blur)"/>
+  <circle cx="384" cy="296" r="190" fill="#1B121A" stroke="#A62E58" stroke-opacity="0.45" stroke-width="2"/>
+  <circle cx="384" cy="296" r="156" stroke="#E15B83" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="5 11"/>
+
+  <g opacity="0.82">
+    <circle cx="184" cy="165" r="8" fill="#E15B83"/>
+    <circle cx="575" cy="132" r="5" fill="#F5EEF3"/>
+    <circle cx="602" cy="394" r="7" fill="#A62E58"/>
+    <path d="M130 242L139 266L163 275L139 284L130 308L121 284L97 275L121 266L130 242Z" fill="#E15B83" fill-opacity="0.72"/>
+    <path d="M588 218L594 234L610 240L594 246L588 262L582 246L566 240L582 234L588 218Z" fill="#F5EEF3" fill-opacity="0.75"/>
+  </g>
+
+  <path d="M274 264C278 216 318 185 379 185C442 185 484 219 492 279L505 393H254L274 264Z" fill="#2D1B29" stroke="#0E0A0E" stroke-width="11"/>
+  <path d="M305 249C307 204 344 177 388 177C431 177 466 204 471 248L450 328H322L305 249Z" fill="#B8A9B2" stroke="#0E0A0E" stroke-width="8"/>
+  <path d="M320 247C345 228 394 218 457 238L447 295C426 312 346 310 325 292L320 247Z" fill="#F5EEF3"/>
+  <path d="M348 255C359 245 370 246 379 255M413 255C424 245 435 246 444 255" stroke="#3E2032" stroke-width="7" stroke-linecap="round"/>
+  <path d="M393 253L385 279L399 285" stroke="#3E2032" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M365 305C380 316 406 316 422 305" stroke="#3E2032" stroke-width="6" stroke-linecap="round"/>
+
+  <path d="M305 338C282 357 270 397 263 448L220 527H536L494 445C488 396 474 357 451 338L415 326H342L305 338Z" fill="#3E2032" stroke="#0E0A0E" stroke-width="11"/>
+  <path d="M339 327C343 361 365 379 389 379C413 379 437 361 441 327L415 319H365L339 327Z" fill="#A62E58" fill-opacity="0.8" stroke="#0E0A0E" stroke-width="8"/>
+  <path d="M303 379C278 400 259 440 249 479M455 379C483 405 498 441 508 481" stroke="#E15B83" stroke-opacity="0.75" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M205 463L518 463L576 551H147L205 463Z" fill="#0E0A0E" stroke="#E15B83" stroke-opacity="0.7" stroke-width="7"/>
+  <path d="M218 474H505L540 536H182L218 474Z" fill="url(#screen)"/>
+  <path d="M268 513L292 493L310 509L338 487" stroke="#E15B83" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M368 502H444" stroke="#B8A9B2" stroke-opacity="0.7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M276 576H451" stroke="#A62E58" stroke-width="8" stroke-linecap="round"/>
+
+  <g fill="#A62E58" stroke="#F5EEF3" stroke-width="3">
+    <circle cx="97" cy="366" r="22"/>
+    <circle cx="628" cy="320" r="18"/>
+  </g>
+  <path d="M88 366H106M97 357V375M620 320H636M628 312V328" stroke="#F5EEF3" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="360" y="608" text-anchor="middle" fill="#B8A9B2" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">ILLUSTRATION PLACEHOLDER</text>
+</svg>

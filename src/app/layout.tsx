@@ -1,26 +1,41 @@
+import type { Metadata } from "next";
+
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-export const metadata = {
-  title: "Portfolio",
-  description: "Created by John",
-  icons: [{ rel: "icon", url: "/bxl-typescript.svg" }],
+export const metadata: Metadata = {
+  title: {
+    default: "JS — Portfólio de desenvolvimento",
+    template: "%s | JS",
+  },
+  description:
+    "Portfólio de desenvolvimento web com foco em experiências claras, funcionais e cuidadosas.",
+  keywords: [
+    "desenvolvimento web",
+    "full-stack",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+  authors: [{ name: "JS" }],
+  creator: "JS",
+  icons: {
+    icon: "/favicon.svg",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>{children}</body>
+    <html lang="pt-BR">
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,36 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Arte conceitual temporária de Eclipse: Ecos do Abismo</title>
+  <desc id="desc">Composição abstrata com um eclipse e ondas de luz em tons de vinho e rosa.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100B10"/>
+      <stop offset="0.55" stop-color="#221720"/>
+      <stop offset="1" stop-color="#3E2032"/>
+    </linearGradient>
+    <radialGradient id="eclipse" cx="0" cy="0" r="1" gradientTransform="translate(745 350) rotate(90) scale(190)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100B10"/>
+      <stop offset="0.68" stop-color="#100B10"/>
+      <stop offset="0.86" stop-color="#A62E58"/>
+      <stop offset="1" stop-color="#E15B83" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="780" fill="url(#background)"/>
+  <circle cx="745" cy="350" r="250" fill="#A62E58" fill-opacity="0.16" filter="url(#glow)"/>
+  <circle cx="745" cy="350" r="225" fill="url(#eclipse)"/>
+  <circle cx="745" cy="350" r="157" fill="#100B10" stroke="#E15B83" stroke-opacity="0.75" stroke-width="3"/>
+  <circle cx="745" cy="350" r="198" stroke="#F5EEF3" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="3 13"/>
+  <path d="M70 624C236 520 337 544 484 587C632 630 767 692 1112 556" stroke="#E15B83" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M54 663C264 542 372 594 524 625C721 664 841 628 1142 502" stroke="#A62E58" stroke-width="12" stroke-opacity="0.55"/>
+  <path d="M44 690C232 582 400 648 555 656C753 666 904 585 1158 451" stroke="#F5EEF3" stroke-opacity="0.18" stroke-width="2"/>
+  <g fill="#F5EEF3">
+    <circle cx="149" cy="172" r="3"/><circle cx="240" cy="313" r="5"/><circle cx="360" cy="148" r="2"/><circle cx="462" cy="286" r="3"/><circle cx="983" cy="176" r="4"/><circle cx="1053" cy="340" r="2"/><circle cx="969" cy="548" r="3"/>
+  </g>
+  <g stroke="#E15B83" stroke-width="2" stroke-linecap="round">
+    <path d="M164 244v28M150 258h28"/><path d="M1010 112v32M994 128h32"/><path d="M365 463v24M353 475h24"/>
+  </g>
+  <text x="72" y="105" fill="#F5EEF3" font-family="Arial, sans-serif" font-size="18" letter-spacing="6">ECLIPSE</text>
+  <text x="72" y="136" fill="#B8A9B2" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">CONCEPT ART PLACEHOLDER</text>
+</svg>

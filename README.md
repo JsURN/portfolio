@@ -1,26 +1,46 @@
-# Portfolio
+# JS / Portfolio
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Portfólio pessoal de desenvolvimento web, construído com Next.js, React, TypeScript e Tailwind CSS.
 
-## What's next? How do I make an app with this?
+## Stack
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Next.js 14 com App Router
+- React 18
+- TypeScript
+- Tailwind CSS
+- ESLint e Prettier
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Executar localmente
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Tailwind CSS](https://tailwindcss.com)
+Use Node.js compatível com o projeto e instale as dependências:
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Inicie o ambiente de desenvolvimento:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+```bash
+npm run dev
+```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-## How do I deploy this?
+## Verificações
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
+
+## Conteúdo pendente
+
+- A ilustração principal atual é um SVG local temporário, identificado no próprio asset como placeholder.
+- A imagem do projeto ECLIPSE também é uma arte conceitual temporária; ela não representa telas ou funcionalidades concluídas.
+- O projeto ECLIPSE está marcado como em desenvolvimento e aponta apenas para seu repositório público.
+- O endereço correto do LinkedIn e um e-mail profissional ainda não foram configurados, por isso não há links fictícios no site.
+
+## Branch de desenvolvimento
+
+O redesign está sendo desenvolvido exclusivamente na branch `redesign`. A branch `main` não faz parte do fluxo local de alterações.
