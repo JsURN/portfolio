@@ -35,21 +35,20 @@ export default function HomePage() {
             <ScrollReveal>
               <p className="hero-kicker">
                 <span className="status-dot" />
-                Portfólio de desenvolvimento
+                Olá, eu sou John
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={80}>
               <h1>
-                Desenvolvedor <span>full-stack</span> com olhar para produto.
+                Desenvolvedor <span>Full-Stack</span>
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delay={160}>
               <p className="hero-description">
-                Transformo problemas técnicos em experiências web claras,
-                funcionais e cuidadosas — do primeiro componente à última
-                interação.
+                Estudante de Ciência da Computação, apaixonado por tecnologia e
+                desenvolvimento de software.
               </p>
             </ScrollReveal>
 
@@ -77,13 +76,16 @@ export default function HomePage() {
                   <Icon name="github" size={18} />
                   <span>GitHub</span>
                 </a>
-                <span
-                  className="social-link social-link-disabled"
-                  aria-label="LinkedIn ainda não configurado"
+                <a
+                  href="https://www.linkedin.com/in/jsurn/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-link"
+                  aria-label="LinkedIn de John"
                 >
                   <span className="social-link__text-mark">in</span>
-                  <span>LinkedIn em breve</span>
-                </span>
+                  <span>LinkedIn</span>
+                </a>
               </div>
             </ScrollReveal>
           </div>
@@ -93,10 +95,10 @@ export default function HomePage() {
             <div className="hero-orbit hero-orbit-two" />
             <div className="hero-visual__frame">
               <Image
-                src="/developer-illustration-placeholder.svg"
-                alt="Ilustração temporária de uma pessoa desenvolvendo em um notebook"
-                width={720}
-                height={620}
+                src="/chibi-programmer-among-stars.png"
+                alt="Personagem programando em um notebook, cercado por planetas e estrelas"
+                width={1402}
+                height={1122}
                 priority
                 className="hero-illustration"
                 sizes="(max-width: 768px) 90vw, 52vw"
@@ -225,12 +227,13 @@ export default function HomePage() {
               <p className="project-card__index">projeto / 001</p>
               <h3>ECLIPSE: Ecos do Abismo</h3>
               <p>
-                Projeto em desenvolvimento, acompanhado pelo repositório público
-                no GitHub. A arte exibida é conceitual e temporária: ela não
-                representa uma tela final nem funcionalidades concluídas.
+                ECLIPSE: Ecos do Abismo é um roguelite 2D em pixel art de fantasia
+                sombria, desenvolvido na Godot 4. O projeto apresenta exploração
+                de masmorras, combate, inimigos e sistemas de progressão, estando
+                atualmente em desenvolvimento.
               </p>
               <div className="project-card__meta">
-                <span>tecnologias em definição</span>
+                <span>Godot 4 • GDScript</span>
                 <span className="project-card__meta-dot" />
                 <span>sem demonstração publicada</span>
               </div>
@@ -256,19 +259,28 @@ export default function HomePage() {
             </p>
             <h2>Vamos construir algo com clareza?</h2>
             <p>
-              O melhor canal disponível neste momento é o GitHub. LinkedIn e
-              e-mail serão adicionados assim que os endereços corretos estiverem
-              configurados.
+              Você pode acompanhar meu trabalho pelo GitHub ou entrar em contato
+              comigo pelo LinkedIn.
             </p>
           </div>
-          <a
-            href="https://github.com/JsURN"
-            target="_blank"
-            rel="noreferrer"
-            className="button button-primary"
-          >
-            Abrir GitHub <Icon name="arrow-up-right" size={18} />
-          </a>
+          <div className="contact-actions">
+            <a
+              href="https://github.com/JsURN"
+              target="_blank"
+              rel="noreferrer"
+              className="button button-primary"
+            >
+              Abrir GitHub <Icon name="arrow-up-right" size={18} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jsurn/"
+              target="_blank"
+              rel="noreferrer"
+              className="button button-secondary"
+            >
+              Abrir LinkedIn <Icon name="arrow-up-right" size={18} />
+            </a>
+          </div>
         </ScrollReveal>
       </section>
 

@@ -39,7 +39,7 @@ npm run build
 - A ilustração principal atual é um SVG local temporário, identificado no próprio asset como placeholder.
 - A imagem do projeto ECLIPSE também é uma arte conceitual temporária; ela não representa telas ou funcionalidades concluídas.
 - O projeto ECLIPSE está marcado como em desenvolvimento e aponta apenas para seu repositório público.
-- O endereço correto do LinkedIn e um e-mail profissional ainda não foram configurados, por isso não há links fictícios no site.
+- O LinkedIn oficial está disponível em [linkedin.com/in/jsurn](https://www.linkedin.com/in/jsurn/).
 
 ## Branch de desenvolvimento
 

@@ -1,5 +1,5 @@
 <svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Arte conceitual temporária de Eclipse: Ecos do Abismo</title>
+  <title id="title">ECLIPSE: Ecos do Abismo</title>
   <desc id="desc">Composição abstrata com um eclipse e ondas de luz em tons de vinho e rosa.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1200" y2="780" gradientUnits="userSpaceOnUse">
@@ -31,6 +31,4 @@
   <g stroke="#E15B83" stroke-width="2" stroke-linecap="round">
     <path d="M164 244v28M150 258h28"/><path d="M1010 112v32M994 128h32"/><path d="M365 463v24M353 475h24"/>
   </g>
-  <text x="72" y="105" fill="#F5EEF3" font-family="Arial, sans-serif" font-size="18" letter-spacing="6">ECLIPSE</text>
-  <text x="72" y="136" fill="#B8A9B2" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">CONCEPT ART PLACEHOLDER</text>
 </svg>
