@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
 import { AnimatedBackground } from "~/components/animated-background";
+import { ThemeProvider } from "~/components/theme-provider";
+import { themeInitScript } from "~/lib/theme";
 
 import "~/styles/globals.css";
 
@@ -36,10 +38,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body>
-        <AnimatedBackground />
-        {children}
+        <ThemeProvider>
+          <AnimatedBackground />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

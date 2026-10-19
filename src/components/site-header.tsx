@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Icon } from "./icons";
+import { ThemeToggle } from "./theme-toggle";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -14,13 +15,17 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="section-shell flex h-20 items-center justify-between gap-6">
-        <Link href="#inicio" className="brand-mark" aria-label="Ir para o início">
+        <Link
+          href="#inicio"
+          className="brand-mark"
+          aria-label="Ir para o início"
+        >
           <span className="brand-mark__symbol">JS</span>
           <span className="brand-mark__divider" aria-hidden="true" />
           <span className="brand-mark__name">PORTFOLIO</span>
         </Link>
 
-        <nav aria-label="Navegação principal" className="hidden md:block">
+        <nav aria-label="Navegação principal" className="hidden lg:block">
           <ul className="flex items-center gap-8">
             {navItems.map((item, index) => (
               <li key={item.href}>
@@ -35,25 +40,32 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <Link href="#contato" className="header-cta hidden sm:inline-flex">
-          Vamos conversar <Icon name="arrow-up-right" size={16} />
-        </Link>
+        <div className="flex shrink-0 items-center gap-3">
+          <ThemeToggle />
+          <Link href="#contato" className="header-cta hidden sm:inline-flex">
+            Vamos conversar <Icon name="arrow-up-right" size={16} />
+          </Link>
 
-        <details className="relative md:hidden">
-          <summary
-            className="icon-button list-none"
-            aria-label="Abrir menu de navegação"
-          >
-            <Icon name="menu" size={22} />
-          </summary>
-          <nav className="mobile-nav" aria-label="Navegação móvel">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="mobile-nav__link">
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </details>
+          <details className="relative lg:hidden">
+            <summary
+              className="icon-button list-none"
+              aria-label="Abrir menu de navegação"
+            >
+              <Icon name="menu" size={22} />
+            </summary>
+            <nav className="mobile-nav" aria-label="Navegação móvel">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="mobile-nav__link"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </details>
+        </div>
       </div>
     </header>
   );
