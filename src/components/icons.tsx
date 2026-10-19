@@ -9,7 +9,9 @@ export type IconName =
   | "play"
   | "sparkles"
   | "terminal"
-  | "arrow-down";
+  | "arrow-down"
+  | "chevron-left"
+  | "chevron-right";
 
 type IconProps = {
   name: IconName;
@@ -44,6 +46,18 @@ export function Icon({ name, className = "", size = 20 }: IconProps) {
         <svg {...common}>
           <path d="M12 5v14" />
           <path d="m6 13 6 6 6-6" />
+        </svg>
+      );
+    case "chevron-left":
+      return (
+        <svg {...common}>
+          <path d="m14 6-6 6 6 6" />
+        </svg>
+      );
+    case "chevron-right":
+      return (
+        <svg {...common}>
+          <path d="m10 6 6 6-6 6" />
         </svg>
       );
     case "briefcase":

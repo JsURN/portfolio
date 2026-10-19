@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Icon } from "~/components/icons";
+import { ProjectCarousel } from "~/components/project-carousel";
 import { ScrollReveal } from "~/components/scroll-reveal";
 import { SectionHeading } from "~/components/section-heading";
 import { SiteHeader } from "~/components/site-header";
@@ -170,7 +171,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="tecnologias" className="content-section section-shell section-muted">
+      <section
+        id="tecnologias"
+        className="content-section section-shell section-muted"
+      >
         <ScrollReveal>
           <SectionHeading
             eyebrow="02 / tecnologias"
@@ -211,42 +215,7 @@ export default function HomePage() {
         </ScrollReveal>
 
         <ScrollReveal delay={120}>
-          <article className="project-card">
-            <div className="project-card__image-wrap">
-              <Image
-                src="/eclipse-project-placeholder.svg"
-                alt="Arte conceitual temporária para o projeto ECLIPSE: Ecos do Abismo"
-                width={1200}
-                height={780}
-                className="project-card__image"
-                sizes="(max-width: 768px) 100vw, 55vw"
-              />
-              <span className="project-card__status">em desenvolvimento</span>
-            </div>
-            <div className="project-card__content">
-              <p className="project-card__index">projeto / 001</p>
-              <h3>ECLIPSE: Ecos do Abismo</h3>
-              <p>
-                ECLIPSE: Ecos do Abismo é um roguelite 2D em pixel art de fantasia
-                sombria, desenvolvido na Godot 4. O projeto apresenta exploração
-                de masmorras, combate, inimigos e sistemas de progressão, estando
-                atualmente em desenvolvimento.
-              </p>
-              <div className="project-card__meta">
-                <span>Godot 4 • GDScript</span>
-                <span className="project-card__meta-dot" />
-                <span>sem demonstração publicada</span>
-              </div>
-              <a
-                href="https://github.com/JsURN/eclipse-ecos-do-abismo"
-                target="_blank"
-                rel="noreferrer"
-                className="text-link"
-              >
-                Ver repositório <Icon name="external-link" size={17} />
-              </a>
-            </div>
-          </article>
+          <ProjectCarousel />
         </ScrollReveal>
       </section>
 
