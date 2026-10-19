@@ -26,9 +26,26 @@ const ThemeContext = createContext<{
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme | null>(null);
   const preference = useRef<Theme | null>(null);
+  const initialized = useRef(false);
+  const transitionTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const applyTheme = useCallback((nextTheme: Theme) => {
-    document.documentElement.dataset.theme = nextTheme;
+    const root = document.documentElement;
+    if (
+      initialized.current &&
+      root.dataset.theme !== nextTheme &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      // Enable color transitions only for a theme change, never the first paint.
+      if (transitionTimer.current !== null)
+        clearTimeout(transitionTimer.current);
+      root.dataset.themeTransition = "true";
+      transitionTimer.current = setTimeout(() => {
+        delete root.dataset.themeTransition;
+        transitionTimer.current = null;
+      }, 400); // Allow the 350ms CSS transition to finish before restoring hover styles.
+    }
+    root.dataset.theme = nextTheme;
     setTheme(nextTheme);
   }, []);
 
@@ -46,9 +63,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     };
 
     syncTheme();
+    initialized.current = true;
     system.addEventListener("change", syncTheme);
     window.addEventListener("storage", onStorage);
     return () => {
+      initialized.current = false;
+      if (transitionTimer.current !== null)
+        clearTimeout(transitionTimer.current);
+      delete document.documentElement.dataset.themeTransition;
       system.removeEventListener("change", syncTheme);
       window.removeEventListener("storage", onStorage);
     };
